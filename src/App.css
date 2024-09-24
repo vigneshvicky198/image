@@ -1,0 +1,81 @@
+:root {
+  --background-color: #3498db; 
+  --form-background: #ffffff; 
+  --form-border-radius: 10px; 
+  --input-border-color: #ccc; 
+  --input-focus-border: #2980b9; 
+  --button-background: #0238ff; 
+  --button-hover: #0238ff; 
+  --text-color: #333; 
+  --shadow-color: rgba(0, 0, 0, 0.2); 
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  text-align: center;
+}
+
+form {
+  background-color: var(--form-background);
+  padding: 40px;
+  border-radius: var(--form-border-radius);
+  box-shadow: 0 4px 15px var(--shadow-color);
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"],
+input[type="file"] {
+  padding: 12px;
+  margin: 10px 0;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid var(--input-border-color);
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="file"]:focus {
+  border-color: var(--input-focus-border);
+}
+
+button {
+  background-color: var(--button-background);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--button-hover);
+}
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+}
